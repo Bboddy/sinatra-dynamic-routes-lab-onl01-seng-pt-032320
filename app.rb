@@ -31,6 +31,7 @@ class App < Sinatra::Base
     elsif op == multiply
       "#{params[:number1].to_i * params[:number1].to_i}"
     elsif op == divide
-      "#{params[:number1].to_i  params[:number1].to_i}"
+      "#{params[:number1].to_i / params[:number1].to_i}"
+    end
   end
 end
