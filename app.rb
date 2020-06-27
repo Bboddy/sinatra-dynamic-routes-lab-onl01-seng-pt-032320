@@ -25,6 +25,6 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     op = params[:operation].to_s
     if op == add
-      "#{params[:number1]}"
+      "#{params[:number1].to_i + params[:number1].to_i}"
   end
 end
